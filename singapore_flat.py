@@ -5,19 +5,19 @@ from streamlit_option_menu import option_menu
 import pickle
 
 #LOAD THE TRAINED MODEL
-with open("C:/Users/monis/Desktop/guvi project/singapore/Resale_Flat_Prices.pkl" , "rb") as f:
+with open("Resale_Flat_Prices.pkl" , "rb") as f:
     model = pickle.load(f)
 
 #LOAD PICKLE LABEL ENCODER FOR TOWN
-with open("C:/Users/monis/Desktop/guvi project/singapore/town.pkl" , "rb") as f:
+with open("town.pkl" , "rb") as f:
     town_pkl = pickle.load(f)
 
 #LOAD PICKLE LABEL ENCODER FOR FLAT TYPE
-with open("C:/Users/monis/Desktop/guvi project/singapore/flat_type.pkl" , "rb") as f:
+with open("flat_type.pkl" , "rb") as f:
     flat_type_pkl = pickle.load(f)
 
 #LOAD PICKLE LABEL ENCODER FOR FLAT MODEL
-with open("C:/Users/monis/Desktop/guvi project/singapore/flat_model.pkl" , "rb") as f:
+with open("flat_model.pkl" , "rb") as f:
     flat_model_pkl = pickle.load(f)
 
 #STREAMLIT APPLICATION
